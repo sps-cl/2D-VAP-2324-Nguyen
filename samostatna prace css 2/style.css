@@ -1,0 +1,99 @@
+.inline-div {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: black;
+    transition: background-color 3s;
+}
+
+.inline-div:hover {
+    background-color: purple;
+}
+
+.inline-block-div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: red;
+    transition: background-color 3s;
+}
+
+.inline-block-div:hover {
+    background-color: purple;
+}
+
+.block-div {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: green;
+    transition: background-color 3s;
+}
+
+.block-div:hover {
+    background-color: purple;
+}
+
+.flex-div {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    color: gray;
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: blue;
+    transition: background-color 3s;
+}
+
+.flex-div:hover {
+    background-color: purple;
+}
+
+.inline-container {
+    border: 1px solid black;
+}
+
+.inline-block-container {
+    border: 1px solid black;
+}
+
+.block-container {
+    display: block;
+    border: 1px solid black;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+
+@keyframes expand-contract {
+    0%, 100% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+}
+
+.inline-div, .inline-block-div, .block-div, .flex-div {
+    animation: expand-contract 2s linear infinite alternate;
+}
